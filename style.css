@@ -9,6 +9,7 @@ section {
   position: relative;
   min-height: 100vh;
   width: 100%;
+  color: #f3f5f5;
   background: #14110f;
   display: flex;
   align-items: center;
@@ -18,36 +19,73 @@ section {
 section::before {
   content: "";
   position: absolute;
-  height: 240px;
-  width: 240px;
+  height: 360px;
+  width: 360px;
   border-radius: 50%;
-  transform: translate(-150px, -100px);
+  transform: translate(-225px, -150px);
   background: linear-gradient(90deg, #c9748f, #f3f5f5);
 }
 
 section::after {
   content: "";
   position: absolute;
-  height: 240px;
-  width: 240px;
+  height: 360px;
+  width: 360px;
   border-radius: 50%;
-  transform: translate(150px, 100px);
+  transform: translate(225px, 150px);
   background: linear-gradient(90deg, #c4693a, #f3f5f5);
 }
 
 .container {
   position: relative;
-  height: 225px;
-  width: 375px;
+  height: 337.5px;
+  width: 562.5px;
   z-index: 100;
 }
 
 .container .card {
   height: 100%;
   width: 100%;
+  padding: 37.5px;
   border-radius: 25px;
   backdrop-filter: blur(25px);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.front header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.title h2 {
+  font-size: 14px;
+  font-weight: 200;
+  color: #edf0f0;
+}
+
+.fa-github,
+.fa-linkedin {
+  color: #f3f5f5;
+  font-size: 32px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
 }
